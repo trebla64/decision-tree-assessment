@@ -1,0 +1,651 @@
+{
+  "name": "Tree",
+  "directed": true,
+  "strict": false,
+  "_draw_": 
+  [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [[0.000,0.000],[0.000,261.000],[299.000,261.000],[299.000,0.000]]
+    }
+  ],
+  "bb": "0,0,299,261",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "0",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [[256.000,261.000],[99.000,261.000],[99.000,193.000],[256.000,193.000]]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [177.500,245.800],
+          "align": "c",
+          "width": 141.000,
+          "text": "Category 2_2A <= 0.5"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [177.500,230.800],
+          "align": "c",
+          "width": 75.000,
+          "text": "gini = 0.375"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [177.500,215.800],
+          "align": "c",
+          "width": 79.000,
+          "text": "samples = 4"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [177.500,200.800],
+          "align": "c",
+          "width": 81.000,
+          "text": "value = [1, 3]"
+        }
+      ],
+      "fontname": "helvetica",
+      "height": "0.94444",
+      "label": "Category 2_2A <= 0.5\\ngini = 0.375\\nsamples = 4\\nvalue = [1, 3]",
+      "pos": "177.5,227",
+      "shape": "box",
+      "width": "2.1806"
+    },
+    {
+      "_gvid": 1,
+      "name": "1",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [[184.000,157.000],[27.000,157.000],[27.000,89.000],[184.000,89.000]]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [105.500,141.800],
+          "align": "c",
+          "width": 141.000,
+          "text": "Category 1_1A <= 0.5"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [105.500,126.800],
+          "align": "c",
+          "width": 58.000,
+          "text": "gini = 0.5"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [105.500,111.800],
+          "align": "c",
+          "width": 79.000,
+          "text": "samples = 2"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [105.500,96.800],
+          "align": "c",
+          "width": 81.000,
+          "text": "value = [1, 1]"
+        }
+      ],
+      "fontname": "helvetica",
+      "height": "0.94444",
+      "label": "Category 1_1A <= 0.5\\ngini = 0.5\\nsamples = 2\\nvalue = [1, 1]",
+      "pos": "105.5,123",
+      "shape": "box",
+      "width": "2.1806"
+    },
+    {
+      "_gvid": 2,
+      "name": "2",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [[97.000,53.000],[0.000,53.000],[0.000,0.000],[97.000,0.000]]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [48.500,37.800],
+          "align": "c",
+          "width": 58.000,
+          "text": "gini = 0.0"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [48.500,22.800],
+          "align": "c",
+          "width": 79.000,
+          "text": "samples = 1"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [48.500,7.800],
+          "align": "c",
+          "width": 81.000,
+          "text": "value = [1, 0]"
+        }
+      ],
+      "fontname": "helvetica",
+      "height": "0.73611",
+      "label": "gini = 0.0\\nsamples = 1\\nvalue = [1, 0]",
+      "pos": "48.5,26.5",
+      "shape": "box",
+      "width": "1.3472"
+    },
+    {
+      "_gvid": 3,
+      "name": "3",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [[212.000,53.000],[115.000,53.000],[115.000,0.000],[212.000,0.000]]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [163.500,37.800],
+          "align": "c",
+          "width": 58.000,
+          "text": "gini = 0.0"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [163.500,22.800],
+          "align": "c",
+          "width": 79.000,
+          "text": "samples = 1"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [163.500,7.800],
+          "align": "c",
+          "width": 81.000,
+          "text": "value = [0, 1]"
+        }
+      ],
+      "fontname": "helvetica",
+      "height": "0.73611",
+      "label": "gini = 0.0\\nsamples = 1\\nvalue = [0, 1]",
+      "pos": "163.5,26.5",
+      "shape": "box",
+      "width": "1.3472"
+    },
+    {
+      "_gvid": 4,
+      "name": "4",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "p",
+          "points": [[299.000,149.500],[202.000,149.500],[202.000,96.500],[299.000,96.500]]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [250.500,134.300],
+          "align": "c",
+          "width": 58.000,
+          "text": "gini = 0.0"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [250.500,119.300],
+          "align": "c",
+          "width": 79.000,
+          "text": "samples = 2"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [250.500,104.300],
+          "align": "c",
+          "width": 81.000,
+          "text": "value = [0, 2]"
+        }
+      ],
+      "fontname": "helvetica",
+      "height": "0.73611",
+      "label": "gini = 0.0\\nsamples = 2\\nvalue = [0, 2]",
+      "pos": "250.5,123",
+      "shape": "box",
+      "width": "1.3472"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 1,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [[153.920,192.600],[148.080,184.320],[141.740,175.340],[135.630,166.690]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [[138.630,164.860],[130.000,158.710],[132.910,168.900]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [124.880,178.410],
+          "align": "c",
+          "width": 30.000,
+          "text": "True"
+        }
+      ],
+      "fontname": "helvetica",
+      "head_lp": "124.88,182.11",
+      "headlabel": "True",
+      "labelangle": "45",
+      "labeldistance": "2.5",
+      "pos": "e,129.13,157.47 153.92,192.6 148.08,184.32 141.74,175.34 135.63,166.69"
+    },
+    {
+      "_gvid": 2,
+      "tail": 1,
+      "head": 2,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [[85.400,88.680],[80.440,80.450],[75.090,71.590],[70.060,63.250]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [[73.060,61.450],[64.900,54.690],[67.070,65.060]]
+        }
+      ],
+      "fontname": "helvetica",
+      "pos": "e,64.118,53.394 85.404,88.683 80.436,80.447 75.095,71.591 70.061,63.245"
+    },
+    {
+      "_gvid": 3,
+      "tail": 1,
+      "head": 3,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [[125.950,88.680],[131.060,80.360],[136.560,71.400],[141.730,62.970]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [[144.570,65.040],[146.820,54.680],[138.600,61.380]]
+        }
+      ],
+      "fontname": "helvetica",
+      "pos": "e,147.61,53.394 125.95,88.683 131.06,80.357 136.56,71.397 141.73,62.97"
+    },
+    {
+      "_gvid": 1,
+      "tail": 0,
+      "head": 4,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [[201.400,192.600],[209.120,181.820],[217.700,169.830],[225.490,158.940]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [[228.250,161.110],[231.220,150.940],[222.560,157.030]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [236.190,170.670],
+          "align": "c",
+          "width": 36.000,
+          "text": "False"
+        }
+      ],
+      "fontname": "helvetica",
+      "head_lp": "236.19,174.37",
+      "headlabel": "False",
+      "labelangle": "-45",
+      "labeldistance": "2.5",
+      "pos": "e,232.1,149.71 201.4,192.6 209.12,181.82 217.7,169.83 225.49,158.94"
+    }
+  ]
+}
