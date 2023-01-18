@@ -1,77 +1,57 @@
 import csv
+import json
+from collections import defaultdict
 import math
 
-data = []
-with open('data/test.csv', 'r') as f:
-  reader = csv.reader(f)
-  for row in reader:
-    data.append(row)
+# Helper function to calculate the entropy of a dataset
+def entropy(data, decision_var):
+    outcomes = defaultdict(int)
+    for row in data:
+        for stuff in row:
+            outcomes[stuff[decision_var]] += 1
+    entropy = 0
+    for outcome in outcomes.values():
+        probability = outcome / len(data)
+        entropy -= probability * math.log(probability, 2)
+    return entropy
 
-print(data)
+# Helper function to split a dataset on a given attribute
+def split_dataset(data, attribute):
+    partitions = defaultdict(list)
+    for row in data:
+        partitions[row[attribute]].append(row)
+    return partitions
 
-# def calc_optimal_branching_order(data_csv):
-#   # Parse the input CSV data and store it in a data structure
-#   data = []
-#   with open(data_csv, 'r') as f:
-#     reader = csv.reader(f)
-#     for row in reader:
-#       data.append(row)
+# Helper function to build the decision tree
+def build_tree(data, attributes, default, decision_var):
+    outcomes = [row[decision_var] for row in data]
+    if outcomes.count(outcomes[0]) == len(outcomes):
+        return outcomes[0]
+    elif not data or not attributes:
+        return default
+    else:
+        default = max(set(outcomes), key=outcomes.count)
+        best_attribute = min(attributes, key=lambda attr: entropy(split_dataset(data, attr).values(), decision_var))
+        tree = {best_attribute: {}}
+        partitions = split_dataset(data, best_attribute)
+        for partition in partitions:
+            subtree = build_tree(partitions[partition], [attr for attr in attributes if attr != best_attribute], default, decision_var)
+            tree[best_attribute][partition] = subtree
+    return tree
 
-#   # Calculate the optimal branching order using some algorithm
-#   # (this part will depend on the specific problem and the desired criteria for optimality)
-#   branching_order = []
-#   # First, we need to identify the columns in the data that represent the decision
-#   # and the possible branches at each step
-#   decision_col = None
-#   branch_cols = []
-#   for i, col in enumerate(data[0]):
-#     if col == 'decision':
-#       decision_col = i
-#     elif col.startswith('branch'):
-#       branch_cols.append(i)
+# Main function to read input files and write output file
+def decision_tree(input_file1, output_file, decision_var):
+    data = []
+    with open(input_file1, 'r') as f1:
+        reader = csv.DictReader(f1)
+        headers = reader.fieldnames
+        for row in reader:
+            data.append(row)
+    attributes = headers[:-1]
+    tree = build_tree(data, attributes, None, decision_var)
+    with open(output_file, 'w') as f:
+        json.dump(tree, f)
 
-#   # Then, we can iterate over the rows in the data and use the branching columns
-#   # to calculate the branching order at each step
-#   for i, row in enumerate(data):
-#     if i == 0:
-#       # Skip the header row
-#       continue
-
-#     # For each branching column, calculate the number of times that each branch
-#     # appears in the remaining rows of the data, as well as the entropy of each branch
-#     branch_counts = {}
-#     branch_entropy = {}
-#     for col in branch_cols:
-#       branch = row[col]
-#       if branch not in branch_counts:
-#         branch_counts[branch] = 0
-#         branch_entropy[branch] = 0
-#       branch_counts[branch] += 1
-
-#       # Calculate the entropy of each branch based on the distribution of decisions
-#       # among the remaining rows of the data
-#       decision_counts = {}
-#       for j, b_row in enumerate(data):
-#         if j <= i:
-#           # Skip rows that have already been processed
-#           continue
-#         if b_row[col] == branch:
-#           # This row belongs to the current branch
-#           decision = b_row[decision_col]
-#           if decision not in decision_counts:
-#             decision_counts[decision] = 0
-#           decision_counts[decision] += 1
-
-#       # Calculate the entropy of the current branch
-#       total_count = sum(decision_counts.values())
-#       for decision, count in decision_counts.items():
-#         p = count / total_count
-#         branch_entropy[branch] -= p * math.log2(p)
-
-#     # Sort the branches by the entropy, in descending order
-#     sorted_branches = sorted(branch_entropy, key=branch_entropy.get, reverse=True)
-
-#     # Add the sorted branches to the branching order for this step
-#     branching_order.append(sorted_branches)
-
-#   return branching_order
+# Example usage:
+decision_tree('data/cars.csv', 'cars.json', 'buy?')
+decision_tree('data/sports.csv', 'sports.json', 'Outcome')
